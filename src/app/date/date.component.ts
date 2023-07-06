@@ -9,6 +9,10 @@ export class DateComponent implements OnInit {
   message!: string;
   items = ['Angular', 'React', 'Vue', 'Bootstrap', 'Node.js'];
   loggedIn = true;
+  isCollapsed: boolean = true;
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
+  }
   constructor() {
     setInterval(() => {
       this.message = new Date().toLocaleTimeString()

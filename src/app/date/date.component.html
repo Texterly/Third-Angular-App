@@ -1,3 +1,4 @@
+<button (click)="loggedIn = !loggedIn">Click</button>
 <div *ngIf="loggedIn; else loggedOut">
   Logged In.
   <h3>Time:</h3>
@@ -19,3 +20,11 @@
 <ng-template #loggedOut>
   Login please
 </ng-template>
+
+<button *ngIf="isCollapsed" (click)="toggleCollapse()">Отобразить</button>
+<button *ngIf="!isCollapsed" (click)="toggleCollapse()">Спрятать</button>
+<div *ngIf="!isCollapsed">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vero.
+  </p>
+</div>
