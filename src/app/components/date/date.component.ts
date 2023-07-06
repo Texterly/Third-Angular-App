@@ -11,6 +11,12 @@ export class DateComponent implements OnInit {
   loggedIn = true;
   isCollapsed: boolean = true;
   text: string = 'Hello World';
+  visibility: boolean = true;
+
+  toggle () {
+    this.visibility = !this.visibility;
+  }
+
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }

@@ -30,3 +30,15 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vero.
   </p>
 </div>
+
+<div [class.hello]="true">
+  <h1>Hello World</h1>
+  <p [ngClass]="{invisible: visibility}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, voluptatem.</p>
+</div>
+
+<button (click)="toggle()">Toggle</button>
+
+<div [ngStyle]="{'color':'red'}">
+  <h1>Alloha</h1>
+  <p [ngStyle]="{'color': 'yellow'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, voluptatem.</p>
+</div>
