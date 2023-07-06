@@ -10,6 +10,7 @@ export class DateComponent implements OnInit {
   items = ['Angular', 'React', 'Vue', 'Bootstrap', 'Node.js'];
   loggedIn = true;
   isCollapsed: boolean = true;
+  text: string = 'Hello World';
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }
