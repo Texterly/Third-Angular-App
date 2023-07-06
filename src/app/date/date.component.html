@@ -1,4 +1,5 @@
-<div>
+<div *ngIf="loggedIn; else loggedOut">
+  Logged In.
   <h3>Time:</h3>
   <p>{{message}}</p>
 
@@ -14,3 +15,7 @@
     >{{i + 1}} {{item}} {{last}}</li>
   </ul>
 </div>
+
+<ng-template #loggedOut>
+  Login please
+</ng-template>
