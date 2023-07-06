@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent implements OnInit {
   message!: string;
+  items = ['Angular', 'React', 'Vue', 'Bootstrap', 'Node.js'];
   constructor() {
     setInterval(() => {
       this.message = new Date().toLocaleTimeString()
